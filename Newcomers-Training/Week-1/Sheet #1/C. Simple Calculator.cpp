@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
-    long long number1 , number2;
+    long long number1, number2;
 
     cin >> number1 >> number2;
 

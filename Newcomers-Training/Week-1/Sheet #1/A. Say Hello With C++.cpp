@@ -1,21 +1,14 @@
 #include <iostream>
+
 using namespace std;
 
 int main(int argc, const char* argv[])
 {
-    cout << "Hanab";
 
+    string name = "";
+    cin >> name;
 
-    int intValue;
-    long long longValue;
-    char charValue;
-    float floatValue;
-    double doubleValue;
-
-    cin >> intValue >> " " >> longValue >> " " >> charValue >> " " >> floatValue >> " " >> doubleValue;
-
-    cout << intValue << "\n" << longValue << "\n" << charValue << "\n" << floatValue << "\n" << doubleValue;
-    
+    cout << "Hello, " << name;
 
     return 0;
 }
