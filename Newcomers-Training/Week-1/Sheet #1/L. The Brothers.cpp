@@ -12,8 +12,8 @@ int main()
 
 	string lastName_1, lastName_2;
 
-	lastName_1 = name_1.substr(name_1.find(' ', 0) + 1);
-	lastName_2 = name_2.substr(name_2.find(' ', 0) + 1);
+	lastName_1 = name_1.substr(name_1.find(' ') + 1);
+	lastName_2 = name_2.substr(name_2.find(' ') + 1);
 
 	(lastName_1 == lastName_2) ? cout << "ARE Brothers" : cout << "NOT";
 
