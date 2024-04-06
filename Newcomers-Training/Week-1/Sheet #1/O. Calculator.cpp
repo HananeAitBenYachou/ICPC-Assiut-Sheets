@@ -7,7 +7,7 @@ int main()
 	char operation;
 	
 	cin >> num1 >> operation >> num2;
- 
+
 	switch (operation)
 	{
 		case '+':
@@ -26,5 +26,6 @@ int main()
 			cout << num1 / num2;
 			break;
 	}
+
 	return 0;
 }
