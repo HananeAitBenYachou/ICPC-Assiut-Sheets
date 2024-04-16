@@ -19,15 +19,15 @@ static long long GetNumberFactorial(short number)
 
 int main() {
 
-    short numberOfTestCases; 
+    short numberOfTestCases;
     cin >> numberOfTestCases;
 
-    short number = 0; 
+    short number = 0;
 
     for (int i = 1; i <= numberOfTestCases; i++)
     {
         cin >> number;
-     
+
         cout << GetNumberFactorial(number) << "\n";
     }
 
