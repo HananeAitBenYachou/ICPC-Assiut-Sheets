@@ -10,7 +10,7 @@ int main()
 
     for (short i = 0; i < number; i++)
     {
-        for (short j = 0 ; j <= i ; j++)
+        for (short j = number; j > i; j--)
         {
             cout << "*";
         }
