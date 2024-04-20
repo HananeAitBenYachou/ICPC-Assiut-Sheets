@@ -10,7 +10,8 @@ static string ConvertFromDecimalToBinary(int number)
 
 	while (number > 0)
 	{
-		binaryString = to_string(number % 2) + binaryString;
+		if (number % 2 == 1)
+			binaryString = to_string(number % 2) + binaryString;
 
 		number = number / 2;
 	}
@@ -18,22 +19,14 @@ static string ConvertFromDecimalToBinary(int number)
 	return binaryString;
 }
 
-static string ExtractOnesFromBinary(string binaryString)
-{
-	binaryString.erase(remove(binaryString.begin(), binaryString.end(), '0'), binaryString.end());
-	return binaryString;
-}
-
 static int ConvertFromBinaryToDecimal(string binaryString)
 {
-	binaryString = ExtractOnesFromBinary(binaryString);
-
 	int decimalNumber = 0;
 	short exponent = 0;
 
 	for (short i = binaryString.length() - 1; i >= 0; i--)
 	{
-		decimalNumber += (stoi(string(1,binaryString[i]))) * pow(2, exponent++);
+		decimalNumber += (stoi(string(1, binaryString[i]))) * pow(2, exponent++);
 	}
 
 	return decimalNumber;
@@ -44,7 +37,7 @@ int main()
 	short testCases;
 	cin >> testCases;
 
-    int number = 0;
+	int number = 0;
 
 	while (testCases > 0)
 	{
